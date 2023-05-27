@@ -1,0 +1,9 @@
+name: ShortSneak
+version: 1.0.0
+src-namespace-prefix: DavyCraft648\ShortSneak
+main: DavyCraft648\ShortSneak\Main
+api: 4.20.0
+description: Add experimental 1.20 Short Sneak feature to your server
+author: DavyCraft648
+mcpe-protocol: [582]
+website: https://github.com/DavyCraft648/ShortSneak
