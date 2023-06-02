@@ -25,13 +25,10 @@ class Main extends \pocketmine\plugin\PluginBase{
 		$this->getServer()->getPluginManager()->registerEvent(PlayerToggleSneakEvent::class, function(PlayerToggleSneakEvent $event) : void{
 			$player = $event->getPlayer();
 			if(!$event->isSneaking()){
-				($method = new \ReflectionMethod($player, "recalculateSize"))->setAccessible(true);
-				$method->invoke($player);
+				(new \ReflectionMethod($player, "recalculateSize"))->invoke($player);
 			}elseif(!$player->isSwimming() && !$player->isGliding()){
-				($prop = new \ReflectionProperty($player->size, "height"))->setAccessible(true);
-				$prop->setValue($player->size, 1.5 * $player->getScale());
-				($prop = new \ReflectionProperty($player->size, "eyeHeight"))->setAccessible(true);
-				$prop->setValue($player->size, 1.32 * $player->getScale());
+				(new \ReflectionProperty($player->size, "height"))->setValue($player->size, 1.5 * $player->getScale());
+				(new \ReflectionProperty($player->size, "eyeHeight"))->setValue($player->size, 1.32 * $player->getScale());
 			}
 		}, EventPriority::MONITOR, $this);
 	}
