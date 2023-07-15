@@ -4,3 +4,5 @@ Short Sneak is an experimental feature that was added in 1.19.80. Short Sneak ca
 enter 1.5 blocks like in Minecraft: Java Edition.
 
 **Note: If you use proxy, this plugin must be installed to all subservers to work properly**
+
+You don't need this plugin after pm 5.4.0 released

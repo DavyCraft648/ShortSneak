@@ -1,9 +1,9 @@
 name: ShortSneak
-version: 1.1.0
+version: 1.1.1
 src-namespace-prefix: DavyCraft648\ShortSneak
 main: DavyCraft648\ShortSneak\Main
-api: [4.20.0, 5.0.0]
+api: [4.23.0, 5.3.0]
 description: "Sneak 1.5 block like in Minecraft: Java Edition"
 author: DavyCraft648
-mcpe-protocol: [582, 589]
+mcpe-protocol: [594]
 website: https://github.com/DavyCraft648/ShortSneak
